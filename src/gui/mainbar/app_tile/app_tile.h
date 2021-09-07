@@ -25,13 +25,13 @@
     #include <TTGO.h>
     #include "gui/icon.h"
 
-    #define MAX_APPS_ICON_HORZ      3
-    #define MAX_APPS_ICON_VERT      2
-    #define MAX_APPS_TILES          4
+    #define MAX_APPS_ICON_HORZ      1
+    #define MAX_APPS_ICON_VERT      1
+    #define MAX_APPS_TILES          9
     #define MAX_APPS_ICON           ( MAX_APPS_ICON_HORZ * MAX_APPS_ICON_VERT * MAX_APPS_TILES )
 
-    #define APP_ICON_X_SIZE         70
-    #define APP_ICON_Y_SIZE         70
+    #define APP_ICON_X_SIZE         160
+    #define APP_ICON_Y_SIZE         160
     #define APP_ICON_X_CLEARENCE    8
     #define APP_ICON_Y_CLEARENCE    36
     #define APP_LABEL_X_SIZE        APP_ICON_X_SIZE + APP_ICON_X_CLEARENCE
