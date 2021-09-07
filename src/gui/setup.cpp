@@ -50,7 +50,7 @@ icon_t *setup_register( const char* setupname, const lv_img_dsc_t *icon, lv_even
     lv_imgbtn_set_src( setup->icon_img, LV_BTN_STATE_CHECKED_RELEASED, icon);
     lv_imgbtn_set_src( setup->icon_img, LV_BTN_STATE_CHECKED_PRESSED, icon);
     lv_obj_reset_style_list( setup->icon_img, LV_OBJ_PART_MAIN );
-    lv_obj_align( setup->icon_img , setup->icon_cont, LV_ALIGN_IN_TOP_LEFT, 0, 0 );
+    lv_obj_align( setup->icon_img , setup->icon_cont, LV_ALIGN_CENTER, 0, 0 );
     lv_obj_set_event_cb( setup->icon_img, event_cb );
     // setup icon indicator
     setup->icon_indicator = lv_img_create( setup->icon_cont, NULL );
