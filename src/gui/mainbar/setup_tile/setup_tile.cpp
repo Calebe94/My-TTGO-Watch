@@ -66,6 +66,7 @@ void setup_tile_setup( void ) {
         setup_entry[ setup ].label = lv_label_create( setup_cont[ setup / ( MAX_SETUP_ICON_HORZ * MAX_SETUP_ICON_VERT ) ], NULL );
         mainbar_add_slide_element(setup_entry[ setup ].label);
         lv_obj_reset_style_list( setup_entry[ setup ].label, LV_OBJ_PART_MAIN );
+        lv_style_set_text_font(&setup_style, LV_STATE_DEFAULT, &lv_font_montserrat_22);
         lv_obj_add_style( setup_entry[ setup ].label, LV_OBJ_PART_MAIN, &setup_style );
         lv_obj_set_size( setup_entry[ setup ].label, SETUP_LABEL_X_SIZE, SETUP_LABEL_Y_SIZE );
         lv_obj_align( setup_entry[ setup ].label , setup_entry[ setup ].icon_cont, LV_ALIGN_OUT_BOTTOM_MID, 0, 0 );

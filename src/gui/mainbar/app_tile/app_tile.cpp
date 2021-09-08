@@ -82,6 +82,7 @@ void app_tile_setup( void ) {
         app_entry[ app ].label = lv_label_create( app_cont[ app / ( MAX_APPS_ICON_HORZ * MAX_APPS_ICON_VERT ) ], NULL );
         mainbar_add_slide_element(app_entry[ app ].label);
         lv_obj_reset_style_list( app_entry[ app ].label, LV_OBJ_PART_MAIN );
+        lv_style_set_text_font(&app_label_style, LV_STATE_DEFAULT, &lv_font_montserrat_22);
         lv_obj_add_style( app_entry[ app ].label, LV_OBJ_PART_MAIN, &app_label_style );
         lv_obj_set_size( app_entry[ app ].label, APP_LABEL_X_SIZE, APP_LABEL_Y_SIZE );
         lv_obj_align( app_entry[ app ].label , app_entry[ app ].icon_cont, LV_ALIGN_OUT_BOTTOM_MID, 3, 0 );
